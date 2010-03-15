@@ -49,6 +49,13 @@ class UsersController < ApplicationController
   end
 
   #TODO destroy user function
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+    flash[:notice] = 'User deleted succesfully'
+    redirect_to users_path
+  end
+
   #TODO create roles and user_roles table
   #TODO set roles for user
 

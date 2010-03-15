@@ -16,4 +16,10 @@ class AccountsController < ApplicationController
       render :action => :new
     end
   end
+
+  # for showing the account info
+  def show
+
+  end
+
 end

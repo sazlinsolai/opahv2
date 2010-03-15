@@ -1,0 +1,8 @@
+<p>Users List</p>
+
+<% @users.each do |user| %>
+  <p>User Name :
+  <%= link_to "#{user.login}", user_path(user) %></p>
+  <p>Email :
+  <%= user.email %> </p>
+<% end %>
